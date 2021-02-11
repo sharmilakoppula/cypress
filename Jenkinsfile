@@ -7,9 +7,9 @@ pipeline {
 		stage('build') {
 			
         steps {
-                    sh 'npm install -g yarn'
-    				sh 'yarn install'		               
-    				sh 'yarn test:headless'
+                    sh 'sudo npm install -g yarn'
+    				sh 'sudo yarn install'		               
+    				sh 'sudo yarn test:headless'
 		                
 			} 
         }
